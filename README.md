@@ -5,18 +5,20 @@ A Python script to download and combine document pages from Studocu into a PDF f
 ## Requirements
 
 - Python 3.11 or higher
-- [uv](https://github.com/astral-sh/uv) - Fast Python package installer and resolver
+- [uv](https://github.com/astral-sh/uv) (optional) - Fast Python package installer and resolver
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/aabishkaryal/scrapper.git
 cd scrapper
 ```
 
-2. Install dependencies using uv:
+2. Install dependencies:
+
+Using uv (recommended):
 
 ```bash
 uv venv
@@ -24,7 +26,18 @@ source .venv/bin/activate  # On Unix/macOS
 # or
 .venv\Scripts\activate     # On Windows
 
-uv pip install -r requirements.txt
+uv sync
+```
+
+Using pip:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Unix/macOS
+# or
+.venv\Scripts\activate     # On Windows
+
+pip install -r requirements.txt
 ```
 
 ## Usage
